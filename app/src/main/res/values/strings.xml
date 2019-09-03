@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MovieDbSub3Duty</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="menu_movies">Movies</string>
+    <string name="menu_tvshow">TV Show</string>
+    <string name="menu_upcoming">Up Coming Movies</string>
+    <string name="menu_popular">Popular Movies</string>
+
+    <string name="title_movie">Movies</string>
+    <string name="title_tvshow">TV Show</string>
+    <string name="title_upcoming">Up Coming</string>
+    <string name="title_popular">Popular</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_name">Name</string>
+    <string name="text_title_name">Name Of Title</string>
+    <string name="text_title_date">Release Date</string>
+    <string name="text_date">Title Of Date</string>
+    <string name="lael_rating">Rating : %1s of 5</string>
+    <string name="text_overview">Overview</string>
+    <string name="overview">Text Overview</string>
+</resources>
