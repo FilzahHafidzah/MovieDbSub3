@@ -10,6 +10,9 @@ import android.provider.Settings;
 import android.view.MenuItem;
 
 import com.filzah.moviedbsub3duty.views.FragmentMovie;
+import com.filzah.moviedbsub3duty.views.FragmentPopular;
+import com.filzah.moviedbsub3duty.views.FragmentTvshow;
+import com.filzah.moviedbsub3duty.views.FragmentUpcoming;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
 
@@ -90,15 +93,31 @@ public class MainActivity extends AppCompatActivity
             Toast.makeText(this, "THIS IS MOVIE", Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.nav_tvshow) {
+            FragmentTvshow fragTvshow = new FragmentTvshow();
+            fragTvshow.setArguments(getIntent().getExtras());
+            getSupportFragmentManager().beginTransaction().add(R.id.frame,fragTvshow,"TV Show") .commit();
+            getSupportFragmentManager().popBackStack();
+            Toast.makeText(this, "THIS IS TV SHOW", Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.nav_popular) {
+            FragmentPopular fragPopular = new FragmentPopular();
+            fragPopular.setArguments(getIntent().getExtras());
+            getSupportFragmentManager().beginTransaction().add(R.id.frame,fragPopular,"Popular") .commit();
+            getSupportFragmentManager().popBackStack();
+            Toast.makeText(this, "THIS IS POPULAR", Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.nav_upcoming) {
+            FragmentUpcoming fragUpcoming = new FragmentUpcoming();
+            fragUpcoming.setArguments(getIntent().getExtras());
+            getSupportFragmentManager().beginTransaction().add(R.id.frame,fragUpcoming,"Upcoming") .commit();
+            getSupportFragmentManager().popBackStack();
+            Toast.makeText(this, "THIS IS UPCOMING", Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.nav_share) {
+            Toast.makeText(this, "THIS IS SHARE", Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.nav_send) {
-
+            Toast.makeText(this, "THIS IS SEND", Toast.LENGTH_SHORT).show();
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
