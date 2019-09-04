@@ -28,6 +28,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,13 +36,6 @@ public class MainActivity extends AppCompatActivity
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-//        SectionViewPager sectionViewPager = new SectionViewPager(this, getSupportFragmentManager());
-//        ViewPager viewPager = findViewById(R.id.view_pager);
-//        viewPager.setAdapter(sectionViewPager);
-//        TabLayout tabLayout = findViewById(R.id.tas);
-//        tabLayout.setupWithViewPager(viewPager);
-
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
 

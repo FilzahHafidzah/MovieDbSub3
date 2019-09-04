@@ -5,17 +5,22 @@
     android:layout_height="match_parent"
     tools:context=".views.FragmentTvshow">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
     <ProgressBar
-        android:id="@+id/progress_ar"
+        android:id="@+id/progress_tvshow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         style="?android:attr/progressBarStyle"/>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_show"
+        android:id="@+id/rv_tvshow"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:listitem="@layout/list_item"/>
-
+    </RelativeLayout>
 </FrameLayout>
